@@ -1,0 +1,249 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+:root{
+  --base-white:#FFFFFF;
+  --base-size10:1em;
+  --base-size05:.5em;
+  font-size: 16px;
+  font-family: Microsoft YaHei, SimHei, SimSun, Georgia, Arial, 'Times New Roman';
+  color:#333;
+}
+
+ul{
+  list-style-type: none;
+}
+
+img{
+  display: block;
+  max-width:100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.red, .danger, .wrong {
+  color: red !important;
+}
+
+.yellow, .warning {
+  color: #e6a23c;
+}
+
+.blue, .primary {
+  color: #409eff;
+}
+
+.info {
+  color: #777;
+}
+
+.green, .success, .right {
+  color: #359d02;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.pointer {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.nowrap {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.overHide {
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+/* 
+.flex-vertical-center{
+	align-items: center;
+}
+
+.flex-vertical-top{
+	align-items: flex-start;
+}
+
+.flex-vertical-bottom{
+	align-items: flex-end;
+}
+ */
+
+.flex-center-y{
+	align-items: center;
+}
+
+.flex-top-y{
+	align-items: flex-start;
+}
+
+.flex-end-y{
+	align-items: flex-end;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
+.pr {
+  position: relative;
+}
+
+.mt-10 {
+  margin-top: var(--base-size10);
+}
+
+.mt-5 {
+  margin-top: var(--base-size05);
+}
+
+.mb-10 {
+  margin-bottom: var(--base-size10);
+}
+
+.mb-5 {
+  margin-bottom: var(--base-size05);
+}
+
+.pa-10 {
+  padding: var(--base-size10);
+}
+
+.pa-5 {
+  padding: var(--base-size05);
+}
+
+.font-large{
+  font-size: 1.2em;
+}
+
+.font-default{
+  font-size: 1em;
+}
+
+.font-small{
+  font-size: .8em;
+}
+
+.color-dark{
+  color:#000;
+}
+
+.color-default{
+  color:#333;
+}
+
+.color-light{
+  color:#999;
+}
+
+.color-half{
+  color:#999;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* 顶部 stickyNav 公共样式  */
+.stickyNav{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0 .5em;
+  /* 注意：app顶端的样高度为44px,所以这里line-height也一样 */
+  line-height: 44px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px #555;
+  z-index: 999;
+}
+
+
+/* 反相 20220617115751 */
+.invert{
+  filter: invert(80%);
+}
+
+
+.font-half{
+  font-weight: 300;
+  font-size: .8em;
+}
+
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bgc-white{
+  background-color: #FFF;
+}
+
+
+
+/* element-plus */
+.el-drawer{
+  z-index: 10000000;
+}
+
+

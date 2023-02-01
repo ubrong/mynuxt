@@ -1,0 +1,13 @@
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+
+# created by chy 20230131142301
+-*
+
+
