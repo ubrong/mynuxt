@@ -1,3 +1,16 @@
+:root, html, body{
+  background-color: #f0f0f0;
+  height:100%;
+}
+
+#__nuxt{
+  max-width: 480px;
+  height:auto;
+  min-height: 100%;
+  margin:0 auto;
+  background-color: #fff;
+}
+
 
 img{
   width:100%;

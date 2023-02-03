@@ -14,6 +14,7 @@ export default defineNuxtConfig({
   // 全局css
   css:[
     '@/assets/base.css',
+    '@/assets/pagex.css',
   ],
 
   // app基本匹配

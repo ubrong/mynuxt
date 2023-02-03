@@ -2,6 +2,7 @@
 
 .title{
   line-height: 1.8;
+  border-bottom: 1px solid #DDD;
 }
 
 .list{
@@ -10,8 +11,9 @@
 }
 
 .list li{
+  display: flex;
+  align-items: center;
   margin:.5em 0;
-  padding:1em;
   border-bottom:1px solid #DDD;
 }
 
@@ -21,6 +23,7 @@
   width: 6em;
   height:6em;
   background-color: #ccc;
+  border:1px solid #ccc;
 }
 </style>
 
@@ -30,16 +33,24 @@
 
     <ul class="list">
       <li v-for="(obj, index) in rows" :key="index">
-        <h3>{{obj.title.slice(0, 24)}}</h3>
-        <img src="" alt="img blank">
-        <div class="flex flex-between">
-          <span>
-            {{ obj.cate }}
-          </span>
-          <span>
-            {{ obj.price }}
-          </span>
+        <img src="@/assets/nopic.jpg" alt="img blank" />
+
+        <div>
+
+          <nuxt-link :to="'/news/'+index">{{obj.title.slice(0, 24)}}</nuxt-link>
+
+          <div class="flex flex-between hide">
+            <span>
+              {{ obj.source }}
+            </span>
+            <span>
+              {{ obj.ptime }}
+            </span>
+          </div>
+
         </div>
+        
+        
         
       </li>
     </ul>
@@ -54,18 +65,17 @@ import {ref} from "vue";
 
 interface RowType{
   title:string;
-  price:number;
-  cate:number;
-  // ptime:string;
+  source:string;
+  ptime:string;
 }
 
 const rows = ref<RowType[]>([]);
 
-const { data } = await useFetch('/api/news')
+const { data } = await useFetch('https://www.fastmock.site/mock/01fe46e1d8c5999e49e4c4582d429e1b/newslist/now')
 
 // console.log(data.value);
 // console.log((res.value as any).data.rows);
-rows.value = data.value as RowType[];
+rows.value = data.value.data.rows as RowType[];
  
 
 </script>

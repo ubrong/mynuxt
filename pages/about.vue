@@ -15,4 +15,7 @@ useHead({
 
 <template>
   <h1>站点关于页面</h1>
+  
+  <NavBar></NavBar>
+
 </template>

@@ -22,13 +22,9 @@ useHead({
     </div>    
   </div>
 
+  <NavBar></NavBar>
 </template>
 
 <style scoped>
-.tpage{
-  max-width: 480px;
-  margin:0 auto;
-  line-height: 2;
-  background-color: #F0F0F0;
-}
+
 </style>
