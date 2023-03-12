@@ -2,13 +2,13 @@ import {Configuration, OpenAIApi} from "openai";
 
 export default defineEventHandler( async (event) => {
 
-  // return 'chat';
+  return 'chat';
 
   // const { Configuration, OpenAIApi } = require("openai");
 
   const configuration = new Configuration({
     // apiKey: process.env.OPENAI_API_KEY,
-    apiKey: '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',
+    apiKey: 'sk-XlBY2hTwq6raliqjJ3FlT3BlbkFJL4Clac8hEgpuCamtXti7chy',
   });
 
   const openai = new OpenAIApi(configuration);
